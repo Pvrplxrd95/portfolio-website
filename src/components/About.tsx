@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function About() {
   const skills = [
     { category: "Programming", items: ["Python", "C#", "MT4/MT5 (MQL)", "JavaScript/TypeScript", "React", "Node.js"] },
@@ -10,16 +12,27 @@ export default function About() {
     <section id="about" className="py-20 bg-gray-800 text-white">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">About Me</h2>
-        
-        <div className="prose prose-invert max-w-none">
-          <p className="text-lg mb-6">
-            I'm a passionate software developer and entrepreneur from South Africa.
-            My focus is on building intelligent assistants, automation tools, and business-driven software.
-          </p>
-          <p className="text-lg mb-12">
-            Beyond coding, I run my clothing brand <strong>Predesigns Clothing</strong> and I'm building 
-            scalable tech solutions through <strong>Trade Pulse Technologies</strong>.
-          </p>
+
+        <div className="flex flex-col md:flex-row items-center md:items-start mb-12">
+          <div className="md:mr-8 mb-6 md:mb-0">
+            <Image
+              src="/profile.jpg" // Replace with your actual profile image path
+              alt="Josias Tlou"
+              width={200}
+              height={200}
+              className="rounded-full object-cover"
+            />
+          </div>
+          <div className="prose prose-invert max-w-none">
+            <p className="text-lg mb-6">
+              I&apos;m a passionate software developer and entrepreneur from South Africa.
+              My focus is on building intelligent assistants, automation tools, and business-driven software.
+            </p>
+            <p className="text-lg mb-12">
+              Beyond coding, I run my clothing brand <strong>Predesigns Clothing</strong> and I&apos;m building
+              scalable tech solutions through <strong>Trade Pulse Technologies</strong>.
+            </p>
+          </div>
         </div>
 
         <h3 className="text-2xl font-bold mb-6">Skills I Bring to the Table:</h3>

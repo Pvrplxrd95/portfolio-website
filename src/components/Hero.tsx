@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 text-white px-4">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-          👋 Hi, I'm Josias Tlou
+          👋 Hi, I&apos;m Josias Tlou
         </h1>
         <h2 className="text-2xl md:text-3xl text-gray-300 mb-8">
           🚀 Software Developer | AI Builder | Entrepreneur
