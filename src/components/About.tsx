@@ -16,7 +16,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center md:items-start mb-12">
           <div className="md:mr-8 mb-6 md:mb-0">
             <Image
-              src="/profile.jpg" // Replace with your actual profile image path
+              src="/pvrpimage.jpg"
               alt="Josias Tlou"
               width={200}
               height={200}
