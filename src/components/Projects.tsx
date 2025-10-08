@@ -25,9 +25,9 @@ export default function Projects() {
       tags: ["Mobile", "React Native", "i18n"],
     },
     {
-      title: "Kasi Empire (Game)",
-      description: "SA-themed tycoon game in development with Godot.",
-      tags: ["Godot", "Game Dev", "GDScript"],
+      title: "Pro Driver Assist)",
+      description: "Driver assistance software with **game profile management, input visualization, and feedback tuning.",
+      tags: ["Python", "Tkinter", "Pandas"],
     },
     {
       title: "AlibiSafe",
