@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Projects from '@/components/Projects';
+import CurrentFocus from '@/components/CurrentFocus';
 import Experience from '@/components/Experience';
 import Contact from '@/components/Contact';
 
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
+        <CurrentFocus />
         <Experience />
         <Contact />
       </main>
@@ -27,12 +29,20 @@ export default function Home() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"
           >
-            LinkedIn
+            LinkedIn (Coming Soon)
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            X (Coming Soon)
           </a>
         </div>
       </footer>

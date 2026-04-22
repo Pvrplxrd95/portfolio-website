@@ -25,13 +25,28 @@ export default function About() {
           </div>
           <div className="prose prose-invert max-w-none">
             <p className="text-lg mb-6">
-              I&apos;m a passionate software developer and entrepreneur from South Africa.
-              My focus is on building intelligent assistants, automation tools, and business-driven software.
+              I&apos;m a software developer and entrepreneur focused on building scalable systems, AI tools, and digital solutions that solve real-world problems.
+            </p>
+            <p className="text-lg mb-6">
+              I am currently building <strong>Purple Ray Group</strong> — a multi-industry innovation company building scalable software, AI systems, and digital solutions designed to solve real-world problems, Founder Josias Tlou.
             </p>
             <p className="text-lg mb-12">
               Beyond coding, I run my clothing brand <strong>Predesigns Clothing</strong> and I&apos;m building
               scalable tech solutions through <strong>Trade Pulse Technologies</strong>.
             </p>
+            {/* Purple Ray Group Link Placeholder */}
+            <div className="bg-purple-900/30 border border-purple-600 rounded-lg p-4 mb-6">
+              <h4 className="text-purple-400 font-semibold mb-2">🟣 Purple Ray Group</h4>
+              <p className="text-sm text-gray-300 mb-3">
+                Multi-industry innovation company building software, AI systems, and digital solutions.
+              </p>
+              <a
+                href="#"
+                className="text-purple-400 hover:text-purple-300 underline"
+              >
+                Visit Purple Ray Group →
+              </a>
+            </div>
           </div>
         </div>
 
@@ -43,7 +58,7 @@ export default function About() {
               <ul className="space-y-2">
                 {skillGroup.items.map((item) => (
                   <li key={item} className="flex items-center space-x-2">
-                    <span className="text-blue-400">•</span>
+                    <span className="text-purple-400">•</span>
                     <span>{item}</span>
                   </li>
                 ))}

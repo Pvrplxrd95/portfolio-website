@@ -56,15 +56,15 @@ export default function Contact() {
             <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
             
             <div className="space-y-4">
-              <a 
+              <a
                 href="mailto:josiast28@gmail.com"
                 className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors"
               >
                 <span className="text-2xl">📧</span>
                 <span>josiast28@gmail.com</span>
               </a>
-              
-              <a 
+
+              <a
                 href="https://github.com/pvrplxrd95"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,15 +73,25 @@ export default function Contact() {
                 <span className="text-2xl">🐙</span>
                 <span>GitHub</span>
               </a>
-              
-              <a 
-                href="https://linkedin.com/in/yourusername"
+
+              <a
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors"
               >
                 <span className="text-2xl">💼</span>
-                <span>LinkedIn</span>
+                <span>LinkedIn (Coming Soon)</span>
+              </a>
+
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors"
+              >
+                <span className="text-2xl">🐦</span>
+                <span>X (Twitter) (Coming Soon)</span>
               </a>
             </div>
           </div>
@@ -99,7 +109,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
@@ -114,7 +124,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
@@ -129,14 +139,14 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 rows={4}
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
             <button
               type="submit"
               disabled={status === 'sending'}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 disabled:opacity-50"
+              className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 disabled:opacity-50"
             >
               {status === 'sending' ? 'Sending...' : 'Send Message'}
             </button>
