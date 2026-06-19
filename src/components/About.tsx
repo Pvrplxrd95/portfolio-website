@@ -41,10 +41,12 @@ export default function About() {
                 Multi-industry innovation company building software, AI systems, and digital solutions.
               </p>
               <a
-                href="#"
+                href="https://purpleraygroup.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-purple-400 hover:text-purple-300 underline"
               >
-                Visit Purple Ray Group →
+                Visit Purple Ray Group &rarr;
               </a>
             </div>
           </div>

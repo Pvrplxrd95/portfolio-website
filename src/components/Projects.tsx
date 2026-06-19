@@ -6,6 +6,7 @@ interface Project {
   tags: string[];
   imageUrl?: string;
   mediaPlaceholder?: string;
+  link?: string;
 }
 
 export default function Projects() {
@@ -21,6 +22,14 @@ export default function Projects() {
       description: "Predesigns Clothing is a modern streetwear brand focused on expressive design, clean aesthetics, and identity-driven fashion.",
       tags: ["Fashion", "Streetwear", "Clothing Brand", "Design", "Lifestyle", "Creative"],
       mediaPlaceholder: "Fashion collection preview placeholder"
+    },
+    // TODO: Update Predesigns domain to .store after Namecheap migration
+    {
+      title: "Xentara Life",
+      description: "Premium gaming battlestation setups and desk lighting. A PRG consumer goods venture.",
+      tags: ["Consumer Goods", "Revenue", "Gaming", "Battlestations", "Desk Lighting", "Lifestyle", "Hardware"],
+      mediaPlaceholder: "Xentara Life product showcase placeholder",
+      link: "https://xentaralife.store"
     }
   ];
 
@@ -44,8 +53,8 @@ export default function Projects() {
       mediaPlaceholder: "Aurora interface screenshot placeholder"
     },
     {
-      title: "RevRevenue (Sales Tracker Bot)",
-      description: "RevRevenue is a business automation tool that tracks sales, monitors performance, and provides insights to help optimize revenue and decision-making.",
+      title: "Revenue Radar",
+      description: "Revenue Radar is a business automation tool that tracks sales, monitors performance, and provides insights to help optimize revenue and decision-making.",
       tags: ["Business Tools", "Analytics", "Sales Tracking", "Automation", "Finance", "Dashboard", "SaaS"],
       mediaPlaceholder: "Sales analytics chart placeholder"
     },
@@ -95,6 +104,16 @@ export default function Projects() {
                 <div className="p-6">
                   <h4 className="text-xl font-bold mb-2 text-purple-400">{company.title}</h4>
                   <p className="text-gray-300 mb-4 text-sm leading-relaxed">{company.description}</p>
+                  {company.link && (
+                    <a
+                      href={company.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-purple-400 hover:text-purple-300 text-sm mb-4 transition-colors"
+                    >
+                      Visit Store &rarr;
+                    </a>
+                  )}
                   <div className="flex flex-wrap gap-2">
                     {company.tags.slice(0, 3).map((tag, tagIndex) => (
                       <span

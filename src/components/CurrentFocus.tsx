@@ -15,11 +15,19 @@ export default function CurrentFocus() {
       mediaPlaceholder: "MindOS UI preview placeholder"
     },
     {
-      title: "Purple Ray Group Ecosystem",
-      description: "Multi-industry innovation company building scalable software, AI systems, and digital solutions designed to solve real-world problems.",
-      status: "Active",
+      title: "Purple Ray Group",
+      description: "The holding company unifying all ventures and products. Visit the official site.",
+      status: "Live",
       tags: ["Technology", "AI", "Innovation", "Software", "Startup", "Ecosystem", "Multi-Industry"],
-      mediaPlaceholder: "PRG ecosystem diagram placeholder"
+      mediaPlaceholder: "PRG ecosystem diagram placeholder",
+      link: "https://purpleraygroup.com"
+    },
+    {
+      title: "Taxi App",
+      description: "Fleet management platform for South African taxi operators.",
+      status: "Coming Soon",
+      tags: ["Mobile App", "Fleet Management", "South Africa", "Transportation", "Logistics", "Real-Time Tracking"],
+      mediaPlaceholder: "Taxi App mockup placeholder"
     }
   ];
 
@@ -43,6 +51,17 @@ export default function CurrentFocus() {
               <p className="text-gray-300 mb-4 text-sm leading-relaxed">
                 {project.description}
               </p>
+
+              {'link' in project && project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-full text-sm mb-4 transition-colors"
+                >
+                  Visit PRG &rarr;
+                </a>
+              )}
 
               {/* Media Placeholder */}
               <div className="bg-gray-700 rounded-lg p-4 mb-4 text-center">
