@@ -16,7 +16,7 @@ export default function Projects() {
       description: "Trade Pulse Technologies develops automated trading systems, Expert Advisors, and data-driven tools to enhance performance and decision-making in financial markets.",
       tags: ["FinTech", "Trading", "Forex", "Expert Advisors", "Automation", "Market Analysis", "Algorithmic Trading"],
       mediaPlaceholder: "Trading dashboard screenshot placeholder",
-      imageUrl: "/images/tradepulse-technologies.png"
+      imageUrl: "/images/tradepulse-technologies.jpg"
     },
     {
       title: "Predesigns Clothing",
@@ -49,7 +49,7 @@ export default function Projects() {
       description: "Intelligent productivity system designed to organize thoughts, tasks, and workflows using AI-driven insights and cognitive structuring.",
       tags: ["AI", "Productivity", "Cognitive System", "Task Management", "Automation", "Personal Development", "SaaS"],
       mediaPlaceholder: "MindOS dashboard mockup placeholder",
-      imageUrl: "/images/mindos.png"
+      imageUrl: "/images/mindos.jpg"
     },
     {
       title: "Aurora",
@@ -69,14 +69,14 @@ export default function Projects() {
       description: "Pro Driver Assist is a driver enhancement system that improves control, responsiveness, and feedback through advanced input tuning and real-time adjustments.",
       tags: ["Automation", "Driving Software", "Input Control", "Gaming Tools", "Simulation", "Performance Optimization"],
       mediaPlaceholder: "Driver assist interface placeholder",
-      imageUrl: "/images/pro-driver-assist.png"
+      imageUrl: "/images/pro-driver-assist.jpg"
     },
     {
       title: "Talka",
       description: "Talka is a lightweight messaging platform designed for fast, reliable communication with support for local languages and low-end devices.",
       tags: ["Messaging App", "Mobile App", "Real-Time Chat", "Low Data", "Local Languages", "Social Communication"],
       mediaPlaceholder: "Talka chat interface placeholder",
-      imageUrl: "/images/talka-app.png"
+      imageUrl: "/images/talka-app.jpg"
     }
   ];
 

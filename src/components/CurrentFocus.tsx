@@ -16,7 +16,7 @@ export default function CurrentFocus() {
       status: "In Development",
       tags: ["AI", "Productivity", "Cognitive System", "Task Management", "Automation", "Personal Development", "SaaS"],
       mediaPlaceholder: "MindOS UI preview placeholder",
-      imageUrl: "/images/mindos.png"
+      imageUrl: "/images/mindos.jpg"
     },
     {
       title: "Purple Ray Group",
@@ -24,7 +24,7 @@ export default function CurrentFocus() {
       status: "Live",
       tags: ["Technology", "AI", "Innovation", "Software", "Startup", "Ecosystem", "Multi-Industry"],
       mediaPlaceholder: "PRG ecosystem diagram placeholder",
-      imageUrl: "/images/prg-logo.png",
+      imageUrl: "/images/prg-logo.jpg",
       link: "https://purpleraygroup.com"
     },
     {

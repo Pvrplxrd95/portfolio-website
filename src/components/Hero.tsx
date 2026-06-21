@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="mb-8">
           <div className="w-24 h-24 mx-auto relative">
             <Image
-              src="/images/prg-monogram.png"
+              src="/images/prg-monogram.jpg"
               alt="Purple Ray Group"
               fill
               className="object-contain"
