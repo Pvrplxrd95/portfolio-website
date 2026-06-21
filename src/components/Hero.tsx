@@ -1,13 +1,19 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 text-white px-4">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Logo Placeholder */}
+        {/* Logo */}
         <div className="mb-8">
-          <div className="w-24 h-24 mx-auto bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-            PRG
+          <div className="w-24 h-24 mx-auto relative">
+            <Image
+              src="/images/prg-monogram.png"
+              alt="Purple Ray Group"
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
 

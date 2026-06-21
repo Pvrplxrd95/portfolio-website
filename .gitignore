@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# source images ( originals live here, served from public/images )
+/src/images/
+
+# logs
+/logs/

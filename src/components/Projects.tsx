@@ -15,13 +15,15 @@ export default function Projects() {
       title: "Trade Pulse Technologies",
       description: "Trade Pulse Technologies develops automated trading systems, Expert Advisors, and data-driven tools to enhance performance and decision-making in financial markets.",
       tags: ["FinTech", "Trading", "Forex", "Expert Advisors", "Automation", "Market Analysis", "Algorithmic Trading"],
-      mediaPlaceholder: "Trading dashboard screenshot placeholder"
+      mediaPlaceholder: "Trading dashboard screenshot placeholder",
+      imageUrl: "/images/tradepulse-technologies.png"
     },
     {
       title: "Predesigns Clothing",
       description: "Predesigns Clothing is a modern streetwear brand focused on expressive design, clean aesthetics, and identity-driven fashion.",
       tags: ["Fashion", "Streetwear", "Clothing Brand", "Design", "Lifestyle", "Creative"],
-      mediaPlaceholder: "Fashion collection preview placeholder"
+      mediaPlaceholder: "Fashion collection preview placeholder",
+      imageUrl: "/images/predesigns-logo.jpg"
     },
     // TODO: Update Predesigns domain to .store after Namecheap migration
     {
@@ -29,6 +31,7 @@ export default function Projects() {
       description: "Premium gaming battlestation setups and desk lighting. A PRG consumer goods venture.",
       tags: ["Consumer Goods", "Revenue", "Gaming", "Battlestations", "Desk Lighting", "Lifestyle", "Hardware"],
       mediaPlaceholder: "Xentara Life product showcase placeholder",
+      imageUrl: "/images/xentara-logo.jpeg",
       link: "https://xentaralife.store"
     }
   ];
@@ -38,13 +41,15 @@ export default function Projects() {
       title: "AlibiSafe",
       description: "Privacy-first digital protection system that securely records time-stamped activity and location data to provide verifiable proof when it matters most.",
       tags: ["Security", "Privacy", "Mobile App", "Location Tracking", "Legal Tech", "Safety", "Encryption", "Digital Identity"],
-      mediaPlaceholder: "AlibiSafe app UI preview placeholder"
+      mediaPlaceholder: "AlibiSafe app UI preview placeholder",
+      imageUrl: "/images/alibisafe-activity.jpeg"
     },
     {
       title: "MindOS",
       description: "Intelligent productivity system designed to organize thoughts, tasks, and workflows using AI-driven insights and cognitive structuring.",
       tags: ["AI", "Productivity", "Cognitive System", "Task Management", "Automation", "Personal Development", "SaaS"],
-      mediaPlaceholder: "MindOS dashboard mockup placeholder"
+      mediaPlaceholder: "MindOS dashboard mockup placeholder",
+      imageUrl: "/images/mindos.png"
     },
     {
       title: "Aurora",
@@ -56,19 +61,22 @@ export default function Projects() {
       title: "Revenue Radar",
       description: "Revenue Radar is a business automation tool that tracks sales, monitors performance, and provides insights to help optimize revenue and decision-making.",
       tags: ["Business Tools", "Analytics", "Sales Tracking", "Automation", "Finance", "Dashboard", "SaaS"],
-      mediaPlaceholder: "Sales analytics chart placeholder"
+      mediaPlaceholder: "Sales analytics chart placeholder",
+      imageUrl: "/images/revenue-radar.jpeg"
     },
     {
       title: "Pro Driver Assist",
       description: "Pro Driver Assist is a driver enhancement system that improves control, responsiveness, and feedback through advanced input tuning and real-time adjustments.",
       tags: ["Automation", "Driving Software", "Input Control", "Gaming Tools", "Simulation", "Performance Optimization"],
-      mediaPlaceholder: "Driver assist interface placeholder"
+      mediaPlaceholder: "Driver assist interface placeholder",
+      imageUrl: "/images/pro-driver-assist.png"
     },
     {
       title: "Talka",
       description: "Talka is a lightweight messaging platform designed for fast, reliable communication with support for local languages and low-end devices.",
       tags: ["Messaging App", "Mobile App", "Real-Time Chat", "Low Data", "Local Languages", "Social Communication"],
-      mediaPlaceholder: "Talka chat interface placeholder"
+      mediaPlaceholder: "Talka chat interface placeholder",
+      imageUrl: "/images/talka-app.png"
     }
   ];
 

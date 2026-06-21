@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function CurrentFocus() {
   const currentProjects = [
     {
@@ -5,14 +7,16 @@ export default function CurrentFocus() {
       description: "Privacy-first digital protection system that securely records time-stamped activity and location data to provide verifiable proof when it matters most.",
       status: "80% Complete",
       tags: ["Security", "Privacy", "Mobile App", "Location Tracking", "Legal Tech", "Safety", "Encryption", "Digital Identity"],
-      mediaPlaceholder: "AlibiSafe promo video placeholder"
+      mediaPlaceholder: "AlibiSafe promo video placeholder",
+      imageUrl: "/images/alibisafe-activity.jpeg"
     },
     {
       title: "MindOS",
       description: "Intelligent productivity system designed to organize thoughts, tasks, and workflows using AI-driven insights and cognitive structuring.",
       status: "In Development",
       tags: ["AI", "Productivity", "Cognitive System", "Task Management", "Automation", "Personal Development", "SaaS"],
-      mediaPlaceholder: "MindOS UI preview placeholder"
+      mediaPlaceholder: "MindOS UI preview placeholder",
+      imageUrl: "/images/mindos.png"
     },
     {
       title: "Purple Ray Group",
@@ -20,6 +24,7 @@ export default function CurrentFocus() {
       status: "Live",
       tags: ["Technology", "AI", "Innovation", "Software", "Startup", "Ecosystem", "Multi-Industry"],
       mediaPlaceholder: "PRG ecosystem diagram placeholder",
+      imageUrl: "/images/prg-logo.png",
       link: "https://purpleraygroup.com"
     },
     {
@@ -64,11 +69,22 @@ export default function CurrentFocus() {
               )}
 
               {/* Media Placeholder */}
-              <div className="bg-gray-700 rounded-lg p-4 mb-4 text-center">
-                <div className="text-purple-400 text-sm">
-                  📹 {project.mediaPlaceholder}
+              {'imageUrl' in project && project.imageUrl ? (
+                <div className="relative h-40 mb-4 rounded-lg overflow-hidden">
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              </div>
+              ) : (
+                <div className="bg-gray-700 rounded-lg p-4 mb-4 text-center">
+                  <div className="text-purple-400 text-sm">
+                    📹 {project.mediaPlaceholder}
+                  </div>
+                </div>
+              )}
 
               <div className="flex flex-wrap gap-2">
                 {project.tags.slice(0, 4).map((tag) => (
