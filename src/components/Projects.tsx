@@ -7,6 +7,7 @@ interface Project {
   imageUrl?: string;
   mediaPlaceholder?: string;
   link?: string;
+  linkLabel?: string;
 }
 
 export default function Projects() {
@@ -16,23 +17,28 @@ export default function Projects() {
       description: "Trade Pulse Technologies develops automated trading systems, Expert Advisors, and data-driven tools to enhance performance and decision-making in financial markets.",
       tags: ["FinTech", "Trading", "Forex", "Expert Advisors", "Automation", "Market Analysis", "Algorithmic Trading"],
       mediaPlaceholder: "Trading dashboard screenshot placeholder",
-      imageUrl: "/images/tradepulse-technologies.jpg"
+      imageUrl: "/images/tradepulse-technologies.jpg",
+      link: "https://tradepulsetech.rf.gd",
+      linkLabel: "Visit Site"
     },
     {
       title: "Predesigns Clothing",
       description: "Predesigns Clothing is a modern streetwear brand focused on expressive design, clean aesthetics, and identity-driven fashion.",
       tags: ["Fashion", "Streetwear", "Clothing Brand", "Design", "Lifestyle", "Creative"],
       mediaPlaceholder: "Fashion collection preview placeholder",
-      imageUrl: "/images/predesigns-logo.jpg"
+      imageUrl: "/images/predesigns-logo.jpg",
+      link: "https://predesignsclothing.rf.gd",
+      linkLabel: "Visit Store"
     },
-    // TODO: Update Predesigns domain to .store after Namecheap migration
+    // TODO: Update Predesigns domain to predesignsclothing.store after Namecheap migration
     {
       title: "Xentara Life",
       description: "Premium gaming battlestation setups and desk lighting. A PRG consumer goods venture.",
       tags: ["Consumer Goods", "Revenue", "Gaming", "Battlestations", "Desk Lighting", "Lifestyle", "Hardware"],
       mediaPlaceholder: "Xentara Life product showcase placeholder",
       imageUrl: "/images/xentara-logo.jpeg",
-      link: "https://xentaralife.store"
+      link: "https://xentaralife.store",
+      linkLabel: "Visit Store"
     }
   ];
 
@@ -119,7 +125,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="inline-block text-purple-400 hover:text-purple-300 text-sm mb-4 transition-colors"
                     >
-                      Visit Store &rarr;
+                      {company.linkLabel || "Visit Website"} &rarr;
                     </a>
                   )}
                   <div className="flex flex-wrap gap-2">

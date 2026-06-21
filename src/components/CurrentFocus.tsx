@@ -5,7 +5,7 @@ export default function CurrentFocus() {
     {
       title: "AlibiSafe",
       description: "Privacy-first digital protection system that securely records time-stamped activity and location data to provide verifiable proof when it matters most.",
-      status: "80% Complete",
+      status: "Done — Launching 2026",
       tags: ["Security", "Privacy", "Mobile App", "Location Tracking", "Legal Tech", "Safety", "Encryption", "Digital Identity"],
       mediaPlaceholder: "AlibiSafe promo video placeholder",
       imageUrl: "/images/alibisafe-activity.jpeg"
@@ -13,7 +13,7 @@ export default function CurrentFocus() {
     {
       title: "MindOS",
       description: "Intelligent productivity system designed to organize thoughts, tasks, and workflows using AI-driven insights and cognitive structuring.",
-      status: "In Development",
+      status: "Launching 2026",
       tags: ["AI", "Productivity", "Cognitive System", "Task Management", "Automation", "Personal Development", "SaaS"],
       mediaPlaceholder: "MindOS UI preview placeholder",
       imageUrl: "/images/mindos.jpg"
